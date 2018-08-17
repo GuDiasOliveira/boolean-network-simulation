@@ -62,7 +62,7 @@ public class BooleanNetwork {
 		for (int i = 0; i < n; i++) {
 			int l = 0;
 			for (int j = 0; j < k; j++) {
-				l += state1.x[j_f[j][i] - 1] ? ((int) Math.pow(2, 2 - j)) : 0;
+				l += state1.x[j_f[j][i] - 1] ? ((int) Math.pow(2, k - j - 1)) : 0;
 			}
 			state2.x[i] = x_f[l][i];
 		}

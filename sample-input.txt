@@ -1,15 +1,23 @@
-# Here begins
 
-  	
-3 2
+
+# First inputting n and k, respectively
+5 3
+
+
 functions:
-	0 1 1 0
-	1 1 1 0
-	0 0 0 1
+	0 1 1 1 0 1 1 1
+	0 1 1 0 0 1 1 1
+	0 1 1 0 1 1 0 1
+	0 0 0 1 0 1 1 1
+	0 0 0 0 0 0 0 1
 
 params:
-	1 2
-	2 3
-	3 1
+	5 2 4
+	3 5 4
+	3 1 5
+	3 4 4
+	5 4 1
+
 
 # End
+

@@ -151,11 +151,19 @@ public class Main {
 		
 		// Processing simulation
 		int t = Integer.parseInt(args[0]);
+		StringBuilder headerSb = new StringBuilder("t");
+		for (int i = 0; i < boolNet.getN(); i++)
+			headerSb.append("\tg").append(i + 1);
+		String header = headerSb.toString();
 		for (int i = 0; i < (1 << boolNet.getN()); i++) {
+			System.out.println(header);
 			String initialState = String.format("%" + boolNet.getN() + "s", Integer.toBinaryString(i)).replace(" ", "0");
 			BooleanState state = new BooleanState(initialState);
 			for (int j = 0; j < t; j++) {
-				System.out.println(state);
+				System.out.print(j);
+				for (boolean x : state.x)
+					System.out.print(x ? "\t1" : "\t0");
+				System.out.println();
 				state = boolNet.step(state);
 			}
 			System.out.println();

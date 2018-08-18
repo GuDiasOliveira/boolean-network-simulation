@@ -37,7 +37,7 @@ java -jar boolean-network-simulator.jar 10 < sample-input.txt
 
 **Requirements:**
 - There must be `n` functions and j-params;
-- Each function must have **2^k^** arguments;
+- Each function must have **2<sup>k</sup>** arguments;
 - Each j-params must have `k` arguments.
 
 There is a `sample-input.txt` file to run.
